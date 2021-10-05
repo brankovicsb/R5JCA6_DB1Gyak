@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+    typedef struct
+    {
+        char rend_szam[6];
+        char tipus[50];
+        int ar;
+    }
+    adatok;
+
+    adatok * adat = NULL;
+    unsigned i = 0;
+
+    void beolvas()
+    {
+        int db = 0;
+
+        printf("Adja meg a felvinni kivant adatok szamat: ");
+        scanf("%d", &db);
+
+        while(i < db)
+        {
+            printf("Adja meg az auto redszamat: ");
+            fflush(stdin);
+            scanf("%s",adat[i].rend_szam);
+
+            printf("Adja meg az auto tipusát: ");
+            fflush(stdin);
+            scanf("%s",adat[i].tipus);
+
+            printf("Adja meg az auto arat: ");
+            fflush(stdin);
+            scanf("%d", &adat[i].ar);
+        }
+
+    }
+
+void fajlbair()
+{
+    FILE *fp;
+    fp = fopen("output.bin", "wb");
+
+    if(fp == NULL)
+    {
+        printf("file hiba!");
+    }
+
+    if(fwrite(adat, sizeof(adatok), i, fp) != i )
+    {
+        printf("Hibas adatok!");
+    }
+
+    fclose(fp);
+}
+
+int main()
+{
+    beolvas();
+    fajlbair();
+
+    return 0;
+}
