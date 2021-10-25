@@ -10,7 +10,7 @@ CREATE TABLE gyarto (
 );
 
 CREATE TABLE termek (
-	tkod int NOT NULL PRIMARY KEY,
+	tkod int NOT NULL PRIMARY KEY, 
 	nev VARCHAR(50),
 	ear int NOT NULL,
 	gyarto int NOT NULL,
