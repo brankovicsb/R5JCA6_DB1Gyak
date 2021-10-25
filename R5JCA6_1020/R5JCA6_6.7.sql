@@ -1,7 +1,0 @@
-Γ count(*) (könyv)
-Γ avg(ar) (könyv)
-Γ min(ar) (könyv)
-Γ count(*) (ნ targy = ‘AB’ (könyv))
-Γ max(ar) (ნ targy = ‘AB’ (könyv))
-Π cim (ნ (ar > (Γ {avg(ar)} (könyv)))
-Γ count(*) (ნ (ar > (Γ {avg(ar)} (könyv)))
