@@ -1,0 +1,187 @@
+insert into Donto values (1,’2-1’,’Wembley stadion’);
+insert into Donto values (2,’1-0’,’Camp Nou’);
+insert into Donto values (3,’0-4’,’Giuseppe Meazza stadion’);
+insert into Donto values (4,’3-6’,’Old Trafford’);
+insert into Donto values (5,’1-2’,’Puskás Arena’);
+
+ 
+
+
+insert into Csapat values (1123,’Barcelona’,’Spanyolorszag’,’hazai’,1);
+insert into Csapat values (3047,’New Castle’,’Anglia’,’vendeg’,1);
+insert into Csapat values (2122,’PSG’,’Franciaorszag’,’hazai’,2);
+insert into Csapat values (0138,’Borussia Dortmund’,’Nemetorszag’,’vendeg’,2);
+insert into Csapat values (1942,’Atalanta’,’Olaszorszag’,’hazai’,3);
+insert into Csapat values (9842,’Werder Bremen’,’Németország’,’vendeg’,3);
+insert into Csapat values (1723,’Manchaster United’,’Anglia’,’hazai’,4);
+insert into Csapat values (5624,’Chelsea’,’Anglia’,’vendeg’,4);
+insert into Csapat values (3421,’Atletico Madrid’,’Spanyolorszag’,’hazai’,5);
+insert into Csapat values (6666,’Betis’,’Spanyolorszag’,’vendeg’,5);
+
+ 
+
+
+insert into Jatekos values (1111,’Ansu Fati’,’spanyol’,’tam’,2,1123);
+insert into Jatekos values (1112,’Ousmane Dembele’,’francia’,’tam’,0,1123);
+insert into Jatekos values (1113,’Antoine Griezmann’,’francia’,’tam’,0,1123);
+insert into Jatekos values (1114,’Frenkie de Jong’,’holland’,’koz’,0,1123);
+insert into Jatekos values (1115,’Pedri’,’spanyol’,’koz’,0,1123);
+insert into Jatekos values (1116,’Philippe Coutinho’,’brazil’,’koz’,0,1123);
+insert into Jatekos values (1117,’Rafinha’,’brazil’,’koz’,0,1123);
+insert into Jatekos values (1118,’Gerard Pique’,’spanyol’,’ved’,0,1123);
+insert into Jatekos values (1119,’Sergino Dest’,’amerikai’,’ved’,0,1123);
+insert into Jatekos values (1120,’Jordi Alba’,’spanyol’,’ved’,0,1123);
+insert into Jatekos values (1121,’Ter Stegen’,’német’,’kap’,0,1123);
+
+insert into Jatekos values (1122,’Ryan Fraser’,’skot’,’tam’,0,3047);
+insert into Jatekos values (1123,’Jacob Murphy’,’angol’,’tam’,0,3047);
+insert into Jatekos values (1124,’Callum Wilson’,’angol’,’tam’,0,3047);
+insert into Jatekos values (1125,’Joe Willock’,’angol’,’koz’,0,3047);
+insert into Jatekos values (1126,’Jeff Hendrick’,’ir’,’koz’,0,3047);
+insert into Jatekos values (1127,’Isaac Hayden’,’angol’,’koz’,1,3047);
+insert into Jatekos values (1128,’Javier Manquillo’,’spanyol’,’ved’,0,3047);
+insert into Jatekos values (1129,’Federico Fernandez’,’argentin’,’ved’,0,3047);
+insert into Jatekos values (1130,’Jamal Lewis’,’angol’,’ved’,0,3047);
+insert into Jatekos values (1131,’Fabian Schar’,’svajc’,’ved’,0,3047);
+insert into Jatekos values (1132,’Freddie Woodman’,’angol’,’kap’,0,3047);
+
+insert into Jatekos values (1133,’Youssoufa Moukoko’,’német’,’tam’,0,138);
+insert into Jatekos values (1134,’Thorgan Hazard’,’francia’,’tam’,0,138);
+insert into Jatekos values (1135,’Axel Witzel’,’német’,’koz’,0,138);
+insert into Jatekos values (1136,’Jude Bellingham’,’angol’,’koz’,0,138);
+insert into Jatekos values (1137,’Reinier’,’brazil’,’koz’,0,138);
+insert into Jatekos values (1138,’Julian Brandt’,’német’,’koz’,1,138);
+insert into Jatekos values (1139,’Thomas Meunier’,’francia’,’ved’,0,138);
+insert into Jatekos values (1140,’Emre Can’,’német’,’ved’,0,138);
+insert into Jatekos values (1141,’Nico Schulz’,’német’,’ved’,0,138);
+insert into Jatekos values (1142,’Manuel Akanji’,’svajc’,’ved’,0,138);
+insert into Jatekos values (1143,’Marwin Hitz’,’svajc’,’kap’,0,138);
+
+insert into Jatekos values (1144,’Neymar’,’brazil’,’tam’,0,2122);
+insert into Jatekos values (1145,’Angel Di Maria’,’argentin’,’tam’,0,2122);
+insert into Jatekos values (1146,’Kylian Mbappe’,’francia’,’tam’,0,2122);
+insert into Jatekos values (1147,’Xavi Simons’,’spanyol’,’koz’,0,2122);
+insert into Jatekos values (1148,’Julian Draxler’,’német’,’koz’,0,2122);
+insert into Jatekos values (1149,’Ander Herrera’,’spanyol’,’koz’,0,2122);
+insert into Jatekos values (1150,’Rafinha’,’brazil’,’koz’,0,2122);
+insert into Jatekos values (1151,’Juan Bernat’,’spanyol’,’ved’,0,2122);
+insert into Jatekos values (1152,’Sergio Ramos’,’spanyol’,’ved’,0,2122);
+insert into Jatekos values (1153,’Abdou Diallo’,’francia’,’ved’,0,2122);
+insert into Jatekos values (1154,’Keylor Navas’,’spanyol’,’kap’,0,2122);
+
+insert into Jatekos values (1155,’Roberto Piccoli’,’olasz’,’tam’,0,1942);
+insert into Jatekos values (1156,’Musa Barrow’,’gambiai’,’tam’,0,1942);
+insert into Jatekos values (1157,’Josip Illicic’,’szloven’,’koz’,0,1942);
+insert into Jatekos values (1158,’Dejan Kulusevski’,’sved’,’koz’,0,1942);
+insert into Jatekos values (1159,’Mario Pasalic’,’horvat’,’koz’,0,1942);
+insert into Jatekos values (1160,’Remo Freuler’,’svajc’,’koz’,0,1942);
+insert into Jatekos values (1161,’Gianluca Mancini’,’olasz’,’ved’,0,1942);
+insert into Jatekos values (1162,’Timothy Castagne’,’belga’,’ved’,0,1942);
+insert into Jatekos values (1163,’Robin Gosens’,’nemet’,’ved’,0,1942);
+insert into Jatekos values (1164,’Rafael Toloi’,’brazil’,’ved’,0,1942);
+insert into Jatekos values (1165,’Etrit Berisha’,’alban’,’ved’,0,1942);
+
+insert into Jatekos values (1166,’Martin Harnik’,’osztrak’,’tam’,0,9842);
+insert into Jatekos values (1167,’Josh Sargent’,’amerikai’,’tam’,2,9842);
+insert into Jatekos values (1168,’Max Kruse’,’nemet’,’tam’,1,9842);
+insert into Jatekos values (1169,’Nuri Sahin’,’torok’,’koz’,0,9842);
+insert into Jatekos values (1170,’Fin Bartels’,’nemet’,’koz’,0,9842);
+insert into Jatekos values (1171,’Davy Klaassen’,’holland’,’koz’,0,9842);
+insert into Jatekos values (1172,’Marco Friedl’,’osztrak’,’ved’,0,9842);
+insert into Jatekos values (1173,’Theodor’,’cseh’,’ved’,1,9842);
+insert into Jatekos values (1174,’Niklas Moisander’,’finn’,’ved’,0,9842);
+insert into Jatekos values (1175,’Sebastian Langkamp’,’nemet’,’ved’,0,9842);
+insert into Jatekos values (1176,’Stefanos Kapino’,’gorog’,’kap’,0,9842);
+
+insert into Jatekos values (1177,’Cristiano Ronaldo’,’portugal’,’tam’,1,1723);
+insert into Jatekos values (1178,’Shola Shoretire’,’angol’,’tam’,0,1723);
+insert into Jatekos values (1179,’Paul Pogba’,’francia’,’koz’,2,1723);
+insert into Jatekos values (1180,’Juan Mata’,’spanyol’,’koz’,0,1723);
+insert into Jatekos values (1181,’Jesse Lingard’,’angol’,’koz’,0,1723);
+insert into Jatekos values (1182,’Hannibal Mejbri’,’torok’,’koz’,0,1723);
+insert into Jatekos values (1183,’Alex Telles’,’brazil’,’ved’,0,1723);
+insert into Jatekos values (1184,’Luke Shaw’,’angol’,’ved’,0,1723);
+insert into Jatekos values (1185,’Raphael Varane’,’francia’,’ved’,0,1723);
+insert into Jatekos values (1186,’Harry Maguire’,’angol’,’ved’,0,1723);
+insert into Jatekos values (1187,’David de Gea’,’spanyol’,’kap’,0,1723);
+
+insert into Jatekos values (1188,’Timo Werner’,’nemet’,’tam’,1,5624);
+insert into Jatekos values (1189,’Christian Pulisic’,’holland’,’tam’,3,5624);
+insert into Jatekos values (1191,’Romelu Lukaku’,’belga’,’tam’,1,5624);
+insert into Jatekos values (1192,’Mason Mount’,’angol’,’koz’,0,5624);
+insert into Jatekos values (1193,’Ross Barkley’,’angol’,’koz’,0,5624);
+insert into Jatekos values (1194,’Kai Havertz’,’nemet’,’koz’,0,5624);
+insert into Jatekos values (1195,’Lewis Baker’,’angol’,’koz’,0,5624);
+insert into Jatekos values (1196,’Thiago Silva’,’brazil’,’ved’,0,5624);
+insert into Jatekos values (1197,’Reece James’,’angol’,’ved’,0,5624);
+insert into Jatekos values (1198,’Marcos Alonso’,’spanyol’,’ved’,0,5624);
+insert into Jatekos values (1199,’Edouard Mendy’,’szenegali’,’kap’,1,5624);
+
+insert into Jatekos values (1200,’Vitolo’,’spanyol’,’tam’,1,3421);
+insert into Jatekos values (1201,’Joao Felix’,’portugal’,’tam’,0,3421);
+insert into Jatekos values (1202,’Luis Suarez’,’argentin’,’tam’,0,3421);
+insert into Jatekos values (1203,’Koke’,’spanyol’,’koz’,0,3421);
+insert into Jatekos values (1204,’Thomas Partney’,’kolumbia’,’koz’,0,3421);
+insert into Jatekos values (1205,’Felipe’,’brazil’,’ved’,0,3421);
+insert into Jatekos values (1206,’Renan Lodi’,’brazil’,’ved’,0,3421);
+insert into Jatekos values (1207,’Kieran Trippier’,’angol’,’ved’,0,3421);
+insert into Jatekos values (1208,’Sime Vrsaljko’,’orosz’,’ved’,0,3421);
+insert into Jatekos values (1209,’Stefan Savic’,’bulgar’,’ved’,0,3421);
+insert into Jatekos values (1210,’Ivo Grbic’,’horvat’,’kap’,0,3421);
+
+insert into Jatekos values (1211,’Loren Moron’,’spanyol’,’tam’,0,6666);
+insert into Jatekos values (1212,’Cristian Tello’,’spanyol’,’tam’,1,6666);
+insert into Jatekos values (1213,’Juanmi’,’spanyol’,’koz’,0,6666);
+insert into Jatekos values (1214,’Viktor Camarasa’,’spanyol’,’koz’,0,6666);
+insert into Jatekos values (1215,’William Carvalho’,’portugal’,’koz’,0,6666);
+insert into Jatekos values (1216,’Nabil Fekir’,’francia’,’koz’,1,6666);
+insert into Jatekos values (1217,’Sidnei’,’brazil’,’ved’,0,6666);
+insert into Jatekos values (1218,’Alex Moreno’,’spanyol’,’ved’,0,6666);
+insert into Jatekos values (1219,’Victor Ruiz’,’spanyol’,’ved’,0,6666);
+insert into Jatekos values (1220,’Marc Bartra’,’spanyol’,’ved’,0,6666);
+insert into Jatekos values (1221,’Claudio Bravo’,’spanyol’,’kap’,0,6666);
+ 
+
+insert into Szabalytalansag values (’piros’,1215);
+insert into Szabalytalansag values (’piros’,1137);
+insert into Szabalytalansag values (’sarga’,1115);
+insert into Szabalytalansag values (’sarga’,1163);
+insert into Szabalytalansag values (’sarga’,1166);
+insert into Szabalytalansag values (’piros’,1123);
+insert into Szabalytalansag values (’sarga’,1202);
+insert into Szabalytalansag values (’sarga’,1184);
+insert into Szabalytalansag values (’sarga’,1154);
+insert into Szabalytalansag values (’sarga’,1119);
+insert into Szabalytalansag values (’sarga’,1198);
+insert into Szabalytalansag values (’sarga’,1148);
+insert into Szabalytalansag values (’sarga’,1152);
+insert into Szabalytalansag values (’sarga’,1172);
+
+ 
+
+insert into Merkozes values (1,’2001.04.12’,’London’,’Anglia’,1);
+insert into Merkozes values (2,’2003.05.27’,’Barcelona’,’Spanyolorszag’,2);
+insert into Merkozes values (3,’2015.04.17’,’Milano’,’Olaszorszag’,3);
+insert into Merkozes values (4,’2007.08.10’,’Manchester’,’Anglia’,4);
+insert into Merkozes values (5,’2010.10.11’,’Budapest’,’Magyarorszag’,5);
+
+ 
+
+insert into Jatekvezeto values (1,’Nagy Laszlo’,’magyar’);
+insert into Jatekvezeto values (2,’Nagy Sandor’,’magyar’);
+insert into Jatekvezeto values (3,’George Floyd’,’angol’);
+insert into Jatekvezeto values (4,’Servacci’,’olasz’);
+insert into Jatekvezeto values (5,’Szep Tamas’,’magyar’);
+insert into Jatekvezeto values (6,’Elek Aron’,’magyar’);
+insert into Jatekvezeto values (7,’Toth Andras’,’magyar’);
+insert into Jatekvezeto values (8,’Fekete Peter’,’magyar’);
+insert into Jatekvezeto values (9,’Tombe Lee’,’holland’);
+insert into Jatekvezeto values (10,’Róka Antal’,’magyar’);
+
+ 
+
+insert into MJ values (’Nagy Laszlo’,’George Floyd’,’Servacci’,1,1);
+insert into MJ values (’Toth Andras’,’Szep Tamas’,’Elek Aron’,7,2);
+insert into MJ values (’Fekete Peter’,’Elek Aron’,’Róka Antal’,8,3);
+insert into MJ values (’Servacci’,’Nagy Sandor’,’Nagy Laszlo’,4,4);
+insert into MJ values (’Elek Aron’,’Toth Andras’,’Tombe Lee’,5,6);
