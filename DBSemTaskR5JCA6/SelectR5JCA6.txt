@@ -1,0 +1,36 @@
+1.	Milyen időpontokban tartották az adatbázisban lévő döntőket?
+  select idopont from merkozes;
+  
+2.	Milyen csapatok vettek részt a döntőkben?
+  select nev from csapat;
+  
+3.	Kik azok a játékosok akik betaláltak a döntőkbe?
+  select nev from jatekos
+  where gol > 0;
+  
+4.	Írassuk ki a támadó poszton játszó játékosok neveit és szerződésszámukat.
+  select nev, igazolvanyszam from jatekos
+  where pozicio = 'tam';
+ 
+5.	Írassuk ki azoknak a csapatoknak a neveit, amelyik csapatban lévő játékos szerzett mesterhármast.
+  select csapat.nev
+  from csapat
+  inner join jatekos
+  where jatekos.gol = 3 and csapat.Csid = jatekos.Csid;
+ 
+6.	Írassuk ki, hogy az adott mérkőzésen ki szerezte a legtöbb gólt, illetve hány gól született a mérkőzésen.
+  select nev, max(gol) from jatekos
+  inner join merkozes
+  where merkozes.idopont = '2001.04.12';
+ 
+7.	Listázza ki azoknak a játékosoknak a neveit védekező pozícióba játszanak és részt vettek az adott mérkőzésen, illetve szereztek gólt.
+  select jatekos.nev
+  from jatekos
+  inner join merkozes
+  where jatekos.pozicio = 'ved' and jatekos.gol > 0 and merkozes.idopont = '2015.04.17';
+ 
+8.	Listázza ki, hogy átlagosan hány gólt rúgtak egy mérkőzésen a csapatok.
+  select csapat.nev
+  from csapat
+  inner join jatekos
+  where jatekos.gol = (avg)jatekos.gol;
