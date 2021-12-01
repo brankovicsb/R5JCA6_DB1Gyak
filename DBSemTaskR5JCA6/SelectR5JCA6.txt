@@ -34,3 +34,11 @@
   from csapat
   inner join jatekos
   where jatekos.gol = (avg)jatekos.gol;
+9.	Listázza ki, hogy átlagosan hány gólt rúgtak a csapatok mérkőzésenként.
+  select avg(gol) as 'atlaggolszam' from jatekos
+  inner join merkozes;
+
+10.	Listázza ki az összes olyan játékos nevét, pozícióját és származási helyét aki szabálytalanságot követően sárga lapot kapott.
+  select nev, pozicio, orszag from jatekos
+  inner join szabalytalansag
+  where szabalytalansag.szabalytalansag = 'sarga' and szabalytalansag.jid = jatekos.igazolvanyszam;
