@@ -1,0 +1,49 @@
+create table Donto (
+Dkod int primary key not null,
+eredmeny varchar(5),
+stadion char(50)
+);
+
+create table Csapat (
+CsID int primary key not null,
+nev char(50) not null,
+orszag char(30),
+pozicio char(6),
+Dkod int references Donto(Dkod)
+);
+
+create table Jatekos (
+igazolvanyszam int primary key not null,
+nev char(50) not null,
+orszag char(50),
+pozicio char(5),
+gol int,
+CsID int references Csapat(CsID)
+);
+
+create table Szabalytalansag (
+szabalytalansag char(5),
+JID int references Jatekos(igazolvanyszam)
+);
+
+create table Merkozes (
+Mkod int primary key not null,
+idopont date,
+varos char(50),
+orszag char(30),
+Dkód int references Donto(Dkod)
+);
+
+create table Jatekvezeto (
+Jkod int primary key not null,
+nev char(50),
+orszag char(30)
+);
+
+create table MJ (
+biro char(30),
+videobiro char(30),
+partjelzo char(30),
+Mkod int references Merkozes(Mkod),
+Jkod int references Jatekvezeto(Jkod)
+);
