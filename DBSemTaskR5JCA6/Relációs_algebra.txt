@@ -1,0 +1,42 @@
+1.	Írassuk ki a játékvezetők neveit és származásukat.
+π nev, orszag jatekvezeto
+
+2.	Milyen időpontokban tartották az adatbázisban lévő döntőket?
+π idopont merkozes
+
+3.	Milyen csapatok vettek részt a döntőkben?
+π nev csapat
+
+4.	Kik azok a játékosok, akik betaláltak a döntőkbe?
+π nev
+  σ gol > 0 jatekos
+ 
+5.	Írassuk ki a támadó poszton játszó játékosok neveit és szerződésszámukat.
+π nev, igazolvanyszam
+  σ pozicio = "tam" jatekos
+
+6.	Írassuk ki azoknak a csapatoknak a neveit, amelyik csapatban lévő játékos szerzett mesterhármast.
+π csapat . nev
+  σ jatekos . gol = 3 AND csapat . csid = jatekos . csid
+   ρ jatekos csapat
+ 
+7.	Írassuk ki, hogy az adott mérkőzésen ki szerezte a legtöbb gólt, illetve hány gól született a mérkőzésen.
+π nev, MAX (gol)
+ γ MAX (gol)
+  σ merkozes . idopont = "2001.04.12"
+   ρ merkozes jatekos
+
+8.	Listázza ki azoknak a játékosoknak a neveit védekező pozícióba játszanak és részt vettek az adott mérkőzésen, illetve szereztek gólt.
+π jatekos . nev
+ σ jatekos . pozicio = "ved" AND jatekos . gol > 0 AND merkozes . idopont = "2015.04.17"
+  ρ merkozes jatekos
+ 
+9.	Listázza ki, hogy átlagosan hány gólt rúgtak a csapatok mérkőzésenként.
+π AVG (gol)
+ γ AVG (gol) jatekos
+    ρ merkozes jatekos
+ 
+10.	Listázza ki az összes olyan játékos nevét, pozícióját és származási helyét, aki szabálytalanságot követően sárga lapot kapott.
+π nev, pozicio, orszag
+ σ szabalytalansag . szabalytalansag = "sarga" AND szabalytalansag . jid = jatekos . igazolvanyszam
+  ρ szabalytalansag jatekos
