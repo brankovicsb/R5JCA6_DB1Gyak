@@ -1,0 +1,71 @@
+1. feladat:
+  AB → A
+  AB → B
+  AB → AB
+  A → A
+  B → B
+
+2. feladat:
+  FB mag: A → B
+
+nem triviális: AC → B, A → B
+
+3. feladat:
+A első Armstrong axióma alapján:
+	BC → B
+A második Armstrong axióma alapján:
+	A → B → AC → BC
+A harmadik Armstrong axióma alapján:
+	AC → BC
+B → AC → B
+
+4. feladat:
+A másodikArmstrong axióma alapján
+	A → B → AC→BC
+	C → D → BC → BD
+
+A harmadik Armstrong axióma alapján:
+	AC → BC
+BD → AC → AC → BD
+
+5. feladat:
+AC → C
+B → DC felbontandó: B → D és B → C
+B → D következik B → C és C → D
+
+megmaradt mag:
+A → B, B → C, C → D
+
+6. feladat
+irreducibilis mag:
+	vevő_kód -> vevő_neve
+	termék_neve -> egységár
+	(datum, vevő_kod) -> termék_neve
+	(datum, vevő_kod) -> összár
+
+7. feladat
+magmaradó mag:
+(A->B, B->C, C->D)
+
+levezethető hogy:
+A->B
+A->C
+A->D
+
+igy a PK mezőnek az A mező választható.
+
+8. feladat
+Az irreducibillis mag:
+	vevo_kod -> vevo_nev
+	termek_neve -> egysegar
+	(datum, vevo_kod) -> termek_neve
+	(datum, vevő_kod) ->osszar
+
+A minimális jelölt kulcs:
+(datum, vevo:kod)
+
+mert:
+(datum, vevo_kod) -> vevo_nev
+(datum, vevo_kod) -> termek_nev
+(datum, vevo_kod) -> egysegar
+(datum, vevo_kod) -> osszar
